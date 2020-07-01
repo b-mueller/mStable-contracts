@@ -1,0 +1,21 @@
+analyze:
+    async: true
+    create-group: true
+    solc: 0.5.16
+    remappings:
+        - "@openzeppelin/=./node_modules/@openzeppelin/"
+    targets:
+        - contracts/governance/ClaimableGovernor.sol:ClaimableGovernor
+        - contracts/governance/DelayedClaimableGovernor.sol:DelayedClaimableGovernor
+        - contracts/governance/InitializableGovernableWhitelist.sol:InitializableGovernableWhitelist
+        - contracts/integrations/MintWith1Inch.sol:MintWith1Inch
+        - contracts/masset/Masset.sol:Masset
+        - contracts/masset/forge-validator/ForgeValidator.sol:ForgeValidator
+        - contracts/masset/BasketManager.sol:BasketManager
+        - contracts/masset/platform-integrations/AaveIntegration.sol
+        - contracts/masset/platform-integrations/CompoundIntegration.sol
+        - contracts/nexus/Nexus.sol:Nexus
+        - contracts/savings/SavingsContract.sol:SavingsContract
+        - contracts/savings/SavingsManager.sol:SavingsManager
+        - contracts/upgradability/DelayedProxyAdmin.sol:DelayedProxyAdmin
+        
